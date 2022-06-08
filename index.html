@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/slick/slick.css" />
+  </head>
+  <body>
+    <!--Header zone-->
+    <header>
+      <a href="#" class="logo-link">
+        <img src="/img/header/symbol.png" alt="logo" />
+        <p class="typo-body-1-b">crypter</p>
+      </a>
+      <a href="#" class="header-link typo-button-2">Discover</a>
+      <a href="#" class="header-link typo-button-2">How it work</a>
+      <div class="header-search-bar">
+        <form action="#">
+          <input type="text" placeholder="Search" class="typo-caption-2" />
+        </form>
+        <button id="header-search-button"><img src="/img/icons/search.png" alt="search" /></button>
+      </div>
+      <div class="icon-button-base">
+        <button id="header-bell-button"><img src="/img/icons/Bell.png" alt="Bell" /></button>
+        <div class="sm-notation-label"></div>
+      </div>
+      <button class="header-right-butt butt-neutr-sm typo-button-2">Upload</button>
+      <button class="header-right-butt butt-light-sm typo-button-2">Connect Wallet</button>
+      <button id="burger-menu"><img src="/img/icons/burger-menu.png" alt="mob-menu" /></button>
+    </header>
+    <!--Invitation zone-->
+    <div class="invitation-box">
+      <h5 class="typo-hairline-2">Create, explore, & collect digital art NFTs.</h5>
+      <h3>The new creative economy.</h3>
+      <button class="butt-light-md typo-button-1">Start your search</button>
+    </div>
+    <!--Auction zone-->
+    <div class="auction-box">
+      <div class="auction-video-container">
+        <video id="auction-video" src="#" poster="#"></video>
+        <div class="video-controls">
+          <button id="play-stop-button"><img src="/img/icons/Play.png" alt="play/stop" /></button>
+          <div class="progress">
+            <progress id="progress" value="0.2">
+              <span id="progress-bar"></span>
+            </progress>
+          </div>
+          <p id="video-timing" class="typo-body-2-b">2:20</p>
+          <button id="video-volume"><img src="/img/icons/Volume.png" alt="Volume" /></button>
+          <button id="video-full"><img src="/img/icons/Fullscreen.png" alt="Full-scr" /></button>
+        </div>
+      </div>
+      <div class="auction-infobox">
+        <h1>Marco <br />Carillo&reg</h1>
+        <div class="sm-frames-row">
+          <div class="auction-frame">
+            <div class="avatar01-frame"><img src="/img/01.png" alt="avatar01" /></div>
+            <div class="auction-frame-text">
+              <p class="typo-caption-2">Creator</p>
+              <h6 class="typo-caption-1-b">Enrico Cole</h6>
+            </div>
+          </div>
+          <div class="auction-frame">
+            <div class="avatar01-frame"><img src="/img/user-unknown.png" alt="avatar01" /></div>
+            <div class="auction-frame-text">
+              <p class="typo-caption-2">Instant price</p>
+              <h6 class="typo-caption-1-b">3.5 ETH</h6>
+            </div>
+          </div>
+        </div>
+        <div class="auction-bid-box">
+          <div class="current-bid">
+            <h5 class="typo-body-2-b">Current bid</h5>
+            <h2>1.00 ETH</h2>
+            <h6 class="typo-body-1-b">$3,618.36</h6>
+          </div>
+          <div class="bid-ending">
+            <h5 class="typo-body-2-b">Auction ending in</h5>
+            <div class="bid-timer">
+              <div class="bid-timer-count">
+                <h4>19</h4>
+                <p class="typo-body-2-b">Hrs</p>
+              </div>
+              <div class="bid-timer-count">
+                <h4>24</h4>
+                <p class="typo-body-2-b">mins</p>
+              </div>
+              <div class="bid-timer-count">
+                <h4>19</h4>
+                <p class="typo-body-2-b">secs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="auction-button-box">
+          <button class="butt-neutr-md typo-button-1">Place a bid</button>
+          <button class="butt-light-md typo-button-1">View item</button>
+          <div class="nav-box">
+            <button class="butt-nav-circle-noact">
+              <img src="/img/icons/arrow-left.png" alt="left" />
+            </button>
+            <button class="butt-nav-circle-act">
+              <img src="/img/icons/arrow-right.png" alt="right" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Feed zone-->
+    <div class="feed-box">
+      <a href="#">
+        <div class="feed-feature-item-col">
+          <div id="feed-feature"></div>
+          <div class="feed-feature-info">
+            <div class="avatar-48"></div>
+            <div class="feed-feature-text">
+              <h5 class="typo-body-1-b">The future of ETH&reg</h5>
+              <p class="typo-caption-1-b">18 in stock</p>
+            </div>
+            <div class="feed-feature-bid">
+              <h5 class="typo-caption-2">Highest bid</h5>
+              <p class="typo-hairline-2 typo-actual-bid">1.125 ETH</p>
+            </div>
+          </div>
+        </div></a
+      >
+      <div class="feed-item-list-col">
+        <div class="feed-item-box">
+          <div class="feed-item-pic" id="feed-item-1"></div>
+          <div class="feed-item-info">
+            <h5>ETH never die</h5>
+            <div class="feed-item-bid">
+              <div class="avatar-24"></div>
+              <h6 class="typo-hairline-2 typo-actual-bid">0.27 ETH</h6>
+              <p class="typo-caption-1">1 of 12</p>
+            </div>
+            <button class="butt-light-xsm typo-button-2">Place a bid</button>
+          </div>
+        </div>
+        <div class="feed-item-box" id="feed-central-item">
+          <div class="feed-item-pic" id="feed-item-2"></div>
+          <div class="feed-item-info">
+            <h5>Future coming soon</h5>
+            <div class="feed-item-bid">
+              <div class="avatar-24"></div>
+              <h6 class="typo-hairline-2 typo-actual-bid">0.27 ETH</h6>
+              <p class="typo-caption-1">1 of 3</p>
+            </div>
+            <button class="butt-light-xsm typo-button-2">Place a bid</button>
+          </div>
+        </div>
+        <div class="feed-item-box">
+          <div class="feed-item-pic" id="feed-item-3"></div>
+          <div class="feed-item-info">
+            <h5>Elon Musk silver coin 3d print</h5>
+            <div class="feed-item-bid">
+              <div class="avatar-24"></div>
+              <h6 class="typo-hairline-2 typo-actual-bid">0.27 ETH</h6>
+              <p class="typo-caption-1">1 of 4</p>
+            </div>
+            <button class="butt-light-xsm typo-button-2">Place a bid</button>
+          </div>
+        </div>
+      </div>
+      <div class="feed-creators-col">
+        <h4 class="typo-caption-2-b">Latest upload from creators 🔥</h4>
+        <div class="feed-cards-box">
+          <!--feed-1st-creator-->
+          <div class="feed-creator-card">
+            <div class="feed-creator-av-box">
+              <div class="feed-creator-notation">
+                <p class="typo-caption-2-b">6</p>
+              </div>
+              <div class="avatar-56"></div>
+            </div>
+            <div class="feed-creator-info">
+              <h5 class="typo-caption-1-b">Payton Harris</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+          </div>
+          <!--feed-2nd-creator-->
+          <div class="feed-creator-card cards-2-4">
+            <div class="feed-creator-av-box">
+              <div class="feed-creator-notation">
+                <p class="typo-caption-2-b">2</p>
+              </div>
+              <div class="avatar-56"></div>
+            </div>
+            <div class="feed-creator-info">
+              <h5 class="typo-caption-1-b">Anita Bins</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+          </div>
+          <!--feed-3rd-creator-->
+          <div class="feed-creator-card cards-2-4">
+            <div class="feed-creator-av-box">
+              <div class="feed-creator-notation">
+                <p class="typo-caption-2-b">3</p>
+              </div>
+              <div class="avatar-56"></div>
+            </div>
+            <div class="feed-creator-info">
+              <h5 class="typo-caption-1-b">Joana Wuckert</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+          </div>
+          <!--feed-4th-creator-->
+          <div class="feed-creator-card cards-2-4">
+            <div class="feed-creator-av-box">
+              <div class="feed-creator-notation">
+                <p class="typo-caption-2-b">4</p>
+              </div>
+              <div class="avatar-56"></div>
+            </div>
+            <div class="feed-creator-info">
+              <h5 class="typo-caption-1-b">Lorena Ledner</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="butt-light-sm typo-button-2">Discover more</button>
+      </div>
+    </div>
+    <!--Top creators zone-->
+    <div class="top-5-body">
+      <div class="top-5-box">
+        <div class="top-5-head">
+          <div class="top-5-text">
+            <h5 class="typo-body-1-b">Popular</h5>
+            <h3>Sellers <i class="fa fa-angle-down"></i></h3>
+          </div>
+          <div class="top-5-timeframe">
+            <h6 class="typo-hairline-2">timeframe</h6>
+            <select class="sel-round-md typo-caption-1-b" name="top-5-creator" id="">
+              <option value="Op1">Today</option>
+              <option value="Op2">Last 7 days</option>
+              <option value="Op3">Last month</option>
+              <option value="Op4">Last 6 months</option>
+              <option value="Op5">Last year</option>
+            </select>
+          </div>
+        </div>
+        <div class="top-5-main">
+          <!--Laptop-PREV-slider button-->
+          <div class="top-5-laptop-buttons">
+            <button class="butt-nav-circle-noact" id="top-5-laptop-slider-prev">
+              <img src="/img/icons/arrow-left.png" alt="" />
+            </button>
+          </div>
+          <!--Laptop-PREV-slider button-->
+          <div class="top-5-slider">
+            <!--top-5-card-1-->
+            <div class="top-5-card" id="top-5-1">
+              <div class="top-5-card-header">
+                <div class="top-5-notation" id="top-5-1-n">
+                  <h4 class="typo-caption-2-b">#1</h4>
+                </div>
+                <div class="top-5-card-butts">
+                  <button class="top-5-butt-plus"></button>
+                  <button class="top-5-butt-away"></button>
+                </div>
+              </div>
+              <div class="top-5-card-photobox">
+                <div class="avatar-64"></div>
+                <div class="acc-verficated">
+                  <img src="/img/icons/top-5/Verificated-acc.png" alt="" />
+                </div>
+              </div>
+              <h5 class="typo-caption-1-b">Edd Harris</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+            <!--top-5-card-2-->
+            <div class="top-5-card" id="top-5-2">
+              <div class="top-5-card-header">
+                <div class="top-5-notation" id="top-5-2-n">
+                  <h4 class="typo-caption-2-b">#2</h4>
+                </div>
+                <div class="top-5-card-butts">
+                  <button class="top-5-butt-plus"></button>
+                  <button class="top-5-butt-away"></button>
+                </div>
+              </div>
+              <div class="top-5-card-photobox">
+                <div class="avatar-64"></div>
+                <div class="acc-verficated">
+                  <img src="/img/icons/top-5/Verificated-acc.png" alt="" />
+                </div>
+              </div>
+              <h5 class="typo-caption-1-b">Odel Hane</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+            <!--top-5-card-3-->
+            <div class="top-5-card" id="top-5-3">
+              <div class="top-5-card-header">
+                <div class="top-5-notation" id="top-5-3-n">
+                  <h4 class="typo-caption-2-b">#3</h4>
+                </div>
+                <div class="top-5-card-butts">
+                  <button class="top-5-butt-plus"></button>
+                  <button class="top-5-butt-away"></button>
+                </div>
+              </div>
+              <div class="top-5-card-photobox">
+                <div class="avatar-64"></div>
+                <div class="acc-verficated">
+                  <img src="/img/icons/top-5/Verificated-acc.png" alt="" />
+                </div>
+              </div>
+              <h5 class="typo-caption-1-b">Marlee Kuphal</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+            <!--top-5-card-4-->
+            <div class="top-5-card" id="top-5-4">
+              <div class="top-5-card-header">
+                <div class="top-5-notation" id="top-5-4-n">
+                  <h4 class="typo-caption-2-b">#4</h4>
+                </div>
+                <div class="top-5-card-butts">
+                  <button class="top-5-butt-plus"></button>
+                  <button class="top-5-butt-away"></button>
+                </div>
+              </div>
+              <div class="top-5-card-photobox">
+                <div class="avatar-64"></div>
+                <div class="acc-verficated">
+                  <img src="/img/icons/top-5/Verificated-acc.png" alt="" />
+                </div>
+              </div>
+              <h5 class="typo-caption-1-b">Payton Kunde</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+            <!--top-5-card-5-->
+            <div class="top-5-card" id="top-5-5">
+              <div class="top-5-card-header">
+                <div class="top-5-notation" id="top-5-5-n">
+                  <h4 class="typo-caption-2-b">#5</h4>
+                </div>
+                <div class="top-5-card-butts">
+                  <button class="top-5-butt-plus"></button>
+                  <button class="top-5-butt-away"></button>
+                </div>
+              </div>
+              <div class="top-5-card-photobox">
+                <div class="avatar-64"></div>
+                <div class="acc-verficated">
+                  <img src="/img/icons/top-5/Verificated-acc.png" alt="" />
+                </div>
+              </div>
+              <h5 class="typo-caption-1-b">Payton Buckridge</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+            <!--top-5-card-6-->
+            <div class="top-5-card" id="top-5-6">
+              <div class="top-5-card-header">
+                <div class="top-5-notation" id="top-5-6-n">
+                  <h4 class="typo-caption-2-b">#6</h4>
+                </div>
+                <div class="top-5-card-butts">
+                  <button class="top-5-butt-plus"></button>
+                  <button class="top-5-butt-away"></button>
+                </div>
+              </div>
+              <div class="top-5-card-photobox">
+                <div class="avatar-64"></div>
+                <div class="acc-verficated">
+                  <img src="/img/icons/top-5/Verificated-acc.png" alt="" />
+                </div>
+              </div>
+              <h5 class="typo-caption-1-b">Payton Buckridge</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+            <!--top-5-card-7-->
+            <div class="top-5-card" id="top-5-7">
+              <div class="top-5-card-header">
+                <div class="top-5-notation" id="top-5-7-n">
+                  <h4 class="typo-caption-2-b">#7</h4>
+                </div>
+                <div class="top-5-card-butts">
+                  <button class="top-5-butt-plus"></button>
+                  <button class="top-5-butt-away"></button>
+                </div>
+              </div>
+              <div class="top-5-card-photobox">
+                <div class="avatar-64"></div>
+                <div class="acc-verficated">
+                  <img src="/img/icons/top-5/Verificated-acc.png" alt="" />
+                </div>
+              </div>
+              <h5 class="typo-caption-1-b">Payton Buckridge</h5>
+              <div class="creator-funds">
+                <h6 class="typo-caption-2-b">2.465</h6>
+                <p class="typo-caption-2">ETH</p>
+              </div>
+            </div>
+          </div>
+          <!--Laptop-NEXT-slider button-->
+          <div class="top-5-laptop-buttons">
+            <button class="butt-nav-circle-act" id="top-5-laptop-slider-next">
+              <img src="/img/icons/arrow-right.png" alt="" />
+            </button>
+          </div>
+          <!--Laptop-NEXT-slider button-->
+        </div>
+        <div class="top-5-tab-mob-buttons">
+          <button class="butt-nav-circle-noact" id="top-5-tab-mob-slider-prev">
+            <img src="/img/icons/arrow-left.png" alt="" />
+          </button>
+          <button class="butt-nav-circle-act" id="top-5-tab-mob-slider-next">
+            <img src="/img/icons/arrow-right.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Hot bid zone-->
+    <div class="hot-bid-main">
+      <div class="hot-bid-header">
+        <h3>Hot bid</h3>
+        <div class="nav-box">
+          <button class="butt-nav-circle-noact" id="hot-bid-slick-prev">
+            <img src="/img/icons/arrow-left.png" alt="left" />
+          </button>
+          <button class="butt-nav-circle-act" id="hot-bid-slick-next">
+            <img src="/img/icons/arrow-right.png" alt="right" />
+          </button>
+        </div>
+      </div>
+      <div class="hot-bid-slider">
+        <!--hot-bid-1st-card-->
+        <div class="hot-bid-card" id="hot-card-1">
+          <div class="hot-bid-item-box">
+            <div class="hot-bid-hover-card">
+              <div class="hot-bid-card-bar">
+                <h4 class="typo-hairline-2">Purchasing!</h4>
+                <button></button>
+              </div>
+              <button class="butt-neutr-sm typo-button-2 hot-place-bid-butt">Place a bid</button>
+            </div>
+            <img src="/img/auction.png" alt="hot-1" />
+          </div>
+          <div class="hot-bid-name-price">
+            <h4 class="typo-body-2-b">Amazing digital art</h4>
+            <h5 class="typo-hairline-2 typo-actual-bid">2.45 ETH</h5>
+          </div>
+          <div class="hot-bid-in-stock">
+            <div class="hot-bid-avas">
+              <div class="avatar-24"></div>
+              <div class="avatar-24 hot-bid-avatar-2"></div>
+              <div class="avatar-24 hot-bid-avatar-3"></div>
+            </div>
+            <h3 class="typo-caption-1-b">3 in stock</h3>
+          </div>
+          <div class="hot-bid-card-info">
+            <div class="hot-bid-highest">
+              <img src="/img/icons/hot-bid-set.png" alt="" />
+              <p class="typo-caption-2">Highest bid</p>
+              <h6 class="typo-caption-2-b">0.001 ETH</h6>
+            </div>
+            <button class="typo-caption-2">New bid 🔥</button>
+          </div>
+        </div>
+        <!--hot-bid-2nd-card-->
+        <div class="hot-bid-card" id="hot-card-2">
+          <div class="hot-bid-item-box">
+            <div class="hot-bid-hover-card">
+              <div class="hot-bid-card-bar">
+                <h4 class="typo-hairline-2">Purchasing!</h4>
+                <button></button>
+              </div>
+              <button class="butt-neutr-sm typo-button-2 hot-place-bid-butt">Place a bid</button>
+            </div>
+            <img src="/img/feed-1.png" alt="hot-2" />
+          </div>
+          <div class="hot-bid-name-price">
+            <h4 class="typo-body-2-b">Amazing digital art</h4>
+            <h5 class="typo-hairline-2 typo-actual-bid">2.45 ETH</h5>
+          </div>
+          <div class="hot-bid-in-stock">
+            <div class="hot-bid-avas">
+              <div class="avatar-24"></div>
+              <div class="avatar-24 hot-bid-avatar-2"></div>
+              <div class="avatar-24 hot-bid-avatar-3"></div>
+            </div>
+            <h3 class="typo-caption-1-b">3 in stock</h3>
+          </div>
+          <div class="hot-bid-card-info">
+            <div class="hot-bid-highest">
+              <img src="/img/icons/hot-bid-set.png" alt="" />
+              <p class="typo-caption-2">Highest bid</p>
+              <h6 class="typo-caption-2-b">0.001 ETH</h6>
+            </div>
+            <button class="typo-caption-2">New bid 🔥</button>
+          </div>
+        </div>
+        <!--hot-bid-3rd-card-->
+        <div class="hot-bid-card" id="hot-card-3">
+          <div class="hot-bid-item-box">
+            <div class="hot-bid-hover-card">
+              <div class="hot-bid-card-bar">
+                <h4 class="typo-hairline-2">Purchasing!</h4>
+                <button></button>
+              </div>
+              <button class="butt-neutr-sm typo-button-2 hot-place-bid-butt">Place a bid</button>
+            </div>
+            <img src="/img/feed-2.png" alt="hot-3" />
+          </div>
+          <div class="hot-bid-name-price">
+            <h4 class="typo-body-2-b">Amazing digital art</h4>
+            <h5 class="typo-hairline-2 typo-actual-bid">2.45 ETH</h5>
+          </div>
+          <div class="hot-bid-in-stock">
+            <div class="hot-bid-avas">
+              <div class="avatar-24"></div>
+              <div class="avatar-24 hot-bid-avatar-2"></div>
+              <div class="avatar-24 hot-bid-avatar-3"></div>
+            </div>
+            <h3 class="typo-caption-1-b">3 in stock</h3>
+          </div>
+          <div class="hot-bid-card-info">
+            <div class="hot-bid-highest">
+              <img src="/img/icons/hot-bid-set.png" alt="" />
+              <p class="typo-caption-2">Highest bid</p>
+              <h6 class="typo-caption-2-b">0.001 ETH</h6>
+            </div>
+            <button class="typo-caption-2">New bid 🔥</button>
+          </div>
+        </div>
+        <!--hot-bid-4th-card-->
+        <div class="hot-bid-card" id="hot-card-4">
+          <div class="hot-bid-item-box">
+            <div class="hot-bid-hover-card">
+              <div class="hot-bid-card-bar">
+                <h4 class="typo-hairline-2">Purchasing!</h4>
+                <button></button>
+              </div>
+              <button class="butt-neutr-sm typo-button-2 hot-place-bid-butt">Place a bid</button>
+            </div>
+            <img src="/img/feed-3.png" alt="hot-4" />
+          </div>
+          <div class="hot-bid-name-price">
+            <h4 class="typo-body-2-b">Amazing digital art</h4>
+            <h5 class="typo-hairline-2 typo-actual-bid">2.45 ETH</h5>
+          </div>
+          <div class="hot-bid-in-stock">
+            <div class="hot-bid-avas">
+              <div class="avatar-24"></div>
+              <div class="avatar-24 hot-bid-avatar-2"></div>
+              <div class="avatar-24 hot-bid-avatar-3"></div>
+            </div>
+            <h3 class="typo-caption-1-b">3 in stock</h3>
+          </div>
+          <div class="hot-bid-card-info">
+            <div class="hot-bid-highest">
+              <img src="/img/icons/hot-bid-set.png" alt="" />
+              <p class="typo-caption-2">Highest bid</p>
+              <h6 class="typo-caption-2-b">0.001 ETH</h6>
+            </div>
+            <button class="typo-caption-2">New bid 🔥</button>
+          </div>
+        </div>
+        <!--hot-bid-5th-card-->
+        <div class="hot-bid-card" id="hot-card-5">
+          <div class="hot-bid-item-box">
+            <div class="hot-bid-hover-card">
+              <div class="hot-bid-card-bar">
+                <h4 class="typo-hairline-2">Purchasing!</h4>
+                <button></button>
+              </div>
+              <button class="butt-neutr-sm typo-button-2 hot-place-bid-butt">Place a bid</button>
+            </div>
+            <img src="/img/feed-3.png" alt="hot-5" />
+          </div>
+          <div class="hot-bid-name-price">
+            <h4 class="typo-body-2-b">Amazing digital art</h4>
+            <h5 class="typo-hairline-2 typo-actual-bid">2.45 ETH</h5>
+          </div>
+          <div class="hot-bid-in-stock">
+            <div class="hot-bid-avas">
+              <div class="avatar-24"></div>
+              <div class="avatar-24 hot-bid-avatar-2"></div>
+              <div class="avatar-24 hot-bid-avatar-3"></div>
+            </div>
+            <h3 class="typo-caption-1-b">3 in stock</h3>
+          </div>
+          <div class="hot-bid-card-info">
+            <div class="hot-bid-highest">
+              <img src="/img/icons/hot-bid-set.png" alt="" />
+              <p class="typo-caption-2">Highest bid</p>
+              <h6 class="typo-caption-2-b">0.001 ETH</h6>
+            </div>
+            <button class="typo-caption-2">New bid 🔥</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Hot collections zone-->
+    <div class="collect-body">
+      <div class="collect-header">
+        <h3>Hot collections</h3>
+        <div class="nav-box">
+          <button class="butt-nav-circle-noact" id="collect-tab-prev">
+            <img src="/img/icons/arrow-left.png" alt="left" />
+          </button>
+          <button class="butt-nav-circle-act" id="collect-tab-next">
+            <img src="/img/icons/arrow-right.png" alt="right" />
+          </button>
+        </div>
+      </div>
+      <div class="collect-slider">
+        <!--collection 1-->
+        <div class="collection-box" id="collection-1">
+          <img src="/img/feed-feautered.png" alt="m1" class="collect-first-item" />
+          <div class="collect-other-items-row">
+            <img src="/img/collect1/1.png" alt="col-1-1" class="collect-other-item" />
+            <img src="/img/collect1/2.png" alt="col-1-1" class="collect-other-item" />
+            <img src="/img/collect1/3.png" alt="col-1-1" class="collect-other-item" />
+          </div>
+          <h3 class="typo-body-1-b">Awesome collection</h3>
+          <div class="collect-info">
+            <div class="collect-author">
+              <div class="avatar-24"></div>
+              <h4 class="typo-caption-1-b">By Kennith Olson</h4>
+            </div>
+            <h5 class="typo-hairline-2 typo-actual-bid">28 items</h5>
+          </div>
+        </div>
+        <!--collection 2-->
+        <div class="collection-box" id="collection-2">
+          <img src="/img/feed-3.png" alt="m1" class="collect-first-item" />
+          <div class="collect-other-items-row">
+            <img src="/img/collect-2/1.png" alt="col-2-1" class="collect-other-item" />
+            <img src="/img/collect-2/2.png" alt="col-2-2" class="collect-other-item" />
+            <img src="/img/collect-2/3.png" alt="col-2-3" class="collect-other-item" />
+          </div>
+          <h3 class="typo-body-1-b">Awesome collection</h3>
+          <div class="collect-info">
+            <div class="collect-author">
+              <div class="avatar-24"></div>
+              <h4 class="typo-caption-1-b">By Willie Barton</h4>
+            </div>
+            <h5 class="typo-hairline-2 typo-actual-bid">28 items</h5>
+          </div>
+        </div>
+        <!--collection 3-->
+        <div class="collection-box" id="collection-3">
+          <img src="/img/auction.png" alt="m1" class="collect-first-item" />
+          <div class="collect-other-items-row">
+            <img src="/img/collect3/1.png" alt="col-3-1" class="collect-other-item" />
+            <img src="/img/collect3/2.png" alt="col-3-2" class="collect-other-item" />
+            <img src="/img/collect3/3.png" alt="col-3-3" class="collect-other-item" />
+          </div>
+          <h3 class="typo-body-1-b">Awesome collection</h3>
+          <div class="collect-info">
+            <div class="collect-author">
+              <div class="avatar-24"></div>
+              <h4 class="typo-caption-1-b">By Halle Jakubovski</h4>
+            </div>
+            <h5 class="typo-hairline-2 typo-actual-bid">28 items</h5>
+          </div>
+        </div>
+      </div>
+      <div class="nav-box" id="hot-collect-bottom-nav">
+        <button class="butt-nav-circle-noact" id="collect-mob-prev">
+          <img src="/img/icons/arrow-left.png" alt="left" />
+        </button>
+        <button class="butt-nav-circle-act" id="collect-mob-next">
+          <img src="/img/icons/arrow-right.png" alt="right" />
+        </button>
+      </div>
+    </div>
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/top-5-slider.js"></script>
+    <script type="text/javascript" src="/js/hot-bid-slider.js"></script>
+    <script type="text/javascript" src="/js/hot-collections-slider.js"></script>
+  </body>
+</html>
