@@ -463,7 +463,7 @@ header button img {
   width: 640px;
   border-radius: 16px;
   overflow: hidden;
-  background-image: url(/img/auction.png);
+  background-image: url(../img/auction.png);
   background-size: cover;
 }
 #auction-video {
